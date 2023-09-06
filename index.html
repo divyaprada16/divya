@@ -1,0 +1,119 @@
+<html>
+<head>
+<style>
+form{
+   border:7px dashed blue;
+   margin:0 500px;
+   padding-left:15px;
+   background-color:rgb(45 232 0);
+   margin-top:70px;
+}
+
+h1{
+  color:green;
+}
+
+input[type=button]{
+   padding:5 35px;
+   margin-left:60px;
+   background-color:black;
+   color:white;
+   font-size:20px;
+   
+}
+
+input[type=button]:hover{
+     background-color:green;
+}
+
+input[type=text]{
+   background-color:pink;
+}
+
+lable{
+   color:blue;
+   font-style:italic;
+   font-size:20px;
+}
+
+
+
+
+
+</style>
+<script>
+   var n1,n2,r;
+function add(){
+   n1=document.godform.num1.value;
+   n2=document.godform.num2.value;
+   n1=parseFloat(n1);
+   n2=parseFloat(n2);
+
+   r=n1+n2;
+   document.godform.result.value=r;
+}
+function sub(){
+   n1=document.godform.num1.value;
+   n2=document.godform.num2.value;
+   n1=parseFloat(n1);
+   n2=parseFloat(n2);
+
+   r=n1-n2;
+   document.godform.result.value=r;
+}
+function mul(){
+   n1=document.godform.num1.value;
+   n2=document.godform.num2.value;
+   n1=parseFloat(n1);
+   n2=parseFloat(n2);
+
+   r=n1*n2;
+   document.godform.result.value=r;
+}
+function div(){
+    n1=document.godform.num1.value;
+    n2=document.godform.num2.value;
+    n1=parseFloat(n1);
+    n2=parseFloat(n2);
+ 
+    r=n1/n2;
+    document.godform.result.value=r;
+
+
+
+}
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+<form name="godform">
+<h1><u>Enter number in the text box field</u></h1>
+<lable>Number1:</lable>
+<input type="text" name="num1" value=" "><br><br>
+<lable>Number2:</lable>
+<input type="text" name="num2" value=" "><br><br>
+
+<input type="button"  value="+" onClick="add()">
+<input type="button"  value="-" onclick="sub()"><br><br>
+<input type="button"  value="*" onClick="mul()">
+<input type="button"  value="/" onClick="div()"><br><br>
+
+<lable>Result:</lable>
+<input type="text" name="result" value=" " onClick="result()">
+<br><br>
+
+
+
+
+
+
+
+</form>
+</body>
+</html>
