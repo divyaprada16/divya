@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>calculator</title>
+<style>
+   body{
+       background-color:pink;
+  }
+.god{
+   border:5px solid black;
+   margin:0 600px;
+   font-size:27px;
+   background-color:yellow;
+   padding-top:10px;
+   margin-top:80px;
+}
+.flower button{
+    font-size:40px;
+}
+h1{
+   text-align:center;
+   font-size:35px;
+   color:rgb(87, 9, 32);
+}
+
+
+</style>
+
+<script>
+  var n1,n2,r;
+
+   function add(){
+  n1=parseInt(myform.text1.value);
+  n2=parseInt(myform.text2.value);
+  n1=parseFloat(n1);
+  n2=parseFloat(n2);
+  
+  result=n1+n2;
+  myform.result.value=result;
+}
+
+
+function sub(){
+  n1=parseInt(myform.text1.value);
+  n2=parseInt(myform.text2.value);
+  n1=parseFloat(n1);
+  n2=parseFloat(n2);
+  
+  result=n1-n2;
+  myform.result.value=result;
+}
+
+
+function mul(){
+  n1=parseInt(myform.text1.value);
+  n2=parseInt(myform.text2.value);
+  n1=parseFloat(n1);
+  n2=parseFloat(n2);
+  
+  result=n1*n2;
+  myform.result.value=result;
+}
+
+
+function div(){
+  n1=parseInt(myform.text1.value);
+  n2=parseInt(myform.text2.value);
+  n1=parseFloat(n1);
+  n2=parseFloat(n2);
+  
+  result=n1/n2;
+  myform.result.value=result;
+}
+</script>
+</head>
+
+
+
+
+<body>
+<div class="god">
+<h1><u>Calculator</u></h1>
+
+<form name="myform">
+Num1:
+<input type="text" name="text1" value=" "><br>
+
+Num2:
+<input type="text" name="text2" value=" ">
+<br><br>
+
+
+<input type="button" value="Add" onclick="add()">
+<input type="button" value="Sub" onclick="sub()">
+
+
+<input type="button" value="Mul" onclick="mul()">
+<input type="button" value="Div" onclick="div()">
+<br><br>
+
+Result:
+<input type="text" name="result" value=" " onclick="result()">
+
+
+</form>
+</div>
+</body>
+</html>
